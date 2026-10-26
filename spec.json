@@ -1,0 +1,205 @@
+{
+  "project": {
+    "name": "Enable Design Landing Page",
+    "brand": "Enable Design",
+    "domain": "enabledesign.io",
+    "tone": [
+      "professional",
+      "trustworthy",
+      "forward-looking"
+    ],
+    "stackAssumptions": {
+      "framework": "Next.js (TypeScript)",
+      "styling": "Tailwind CSS",
+      "ui": "shadcn/ui",
+      "icons": "Lucide"
+    }
+  },
+  "designSystem": {
+    "colorPalette": {
+      "strategy": "Dark, premium-tech baseline with high-contrast cyan accents; avoid purple-on-white, cream-terracotta, or newspaper-like monochrome composition.",
+      "tokens": {
+        "background": "bg-slate-950",
+        "surface": "bg-slate-900",
+        "surfaceAlt": "bg-slate-800",
+        "textPrimary": "text-slate-50",
+        "textSecondary": "text-slate-300",
+        "primary": "bg-cyan-500",
+        "primaryHover": "hover:bg-cyan-400",
+        "primaryForeground": "text-slate-950",
+        "secondary": "bg-emerald-500",
+        "secondaryHover": "hover:bg-emerald-400",
+        "accent": "text-cyan-400",
+        "border": "border-slate-700",
+        "ring": "ring-cyan-400",
+        "muted": "bg-slate-700"
+      }
+    },
+    "typography": {
+      "display": {
+        "family": "Space Grotesk",
+        "fallback": "sans-serif",
+        "tailwindClassHint": "font-['Space_Grotesk']",
+        "use": "Hero headline, major section headings, CTA lead"
+      },
+      "body": {
+        "family": "Manrope",
+        "fallback": "sans-serif",
+        "tailwindClassHint": "font-['Manrope']",
+        "use": "Body paragraphs, feature descriptions, footer content"
+      },
+      "notes": [
+        "Do not use Inter, Roboto, Arial, or system default stacks as primary brand fonts.",
+        "Maintain generous line-height for Korean and English mixed content."
+      ]
+    }
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Why Enable",
+        "targetSectionId": "features"
+      },
+      {
+        "label": "Proof",
+        "targetSectionId": "testimonials"
+      },
+      {
+        "label": "Get Started",
+        "targetSectionId": "cta"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "purpose": "Immediate brand authority and value proposition in first viewport.",
+      "constraints": {
+        "brandSignal": "Enable Design name or logotype must be visible at hero level.",
+        "headlineCount": 1,
+        "supportingSentenceCount": 1,
+        "ctaGroupCount": 1,
+        "firstViewportRule": "Use a full-bleed dominant visual; do not place cards, overlays, or stat strips in the first viewport."
+      },
+      "contentModel": {
+        "headline": "From idea to validated AI product design, faster and with confidence.",
+        "supportingSentence": "Enable Design helps teams turn complex AI concepts into clear, trusted product experiences that ship.",
+        "ctaGroup": [
+          {
+            "type": "primary",
+            "label": "Book a Strategy Call",
+            "icon": "ArrowRight"
+          },
+          {
+            "type": "secondary",
+            "label": "View Case Snapshots",
+            "icon": "Play"
+          }
+        ]
+      }
+    },
+    {
+      "id": "features",
+      "name": "Features",
+      "purpose": "Explain core capabilities with concrete outcomes.",
+      "blocks": [
+        {
+          "title": "AI Product Framing",
+          "description": "Translate ambiguous AI opportunities into product hypotheses and measurable UX goals."
+        },
+        {
+          "title": "Rapid UX Validation",
+          "description": "Prototype and test high-risk flows early to reduce downstream engineering rework."
+        },
+        {
+          "title": "Design-to-Delivery Alignment",
+          "description": "Keep product, engineering, and stakeholders synchronized with implementation-ready design logic."
+        }
+      ]
+    },
+    {
+      "id": "testimonials",
+      "name": "Testimonials / Social Proof",
+      "purpose": "Build trust through outcomes and partner credibility.",
+      "blocks": [
+        {
+          "type": "quote",
+          "content": "Enable Design gave our AI feature roadmap structure and confidence in under three weeks.",
+          "attribution": "Product Lead, B2B SaaS"
+        },
+        {
+          "type": "results",
+          "content": "Prototype decision time reduced by 42% across pilot teams."
+        },
+        {
+          "type": "logoRow",
+          "content": "Space for partner/client logos with monochrome-to-accent hover treatment."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "name": "Call To Action",
+      "purpose": "Drive qualified contact and next-step conversion.",
+      "contentModel": {
+        "headline": "Bring clarity to your next AI product move.",
+        "supportingLine": "Share your context and get a focused recommendation from Enable Design.",
+        "actions": [
+          {
+            "label": "Start a Project Conversation",
+            "style": "primary"
+          },
+          {
+            "label": "Email enabledesign.io Team",
+            "style": "ghost"
+          }
+        ]
+      }
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "purpose": "Reinforce trust, navigation, and legal basics.",
+      "contentModel": {
+        "brand": "Enable Design",
+        "domain": "enabledesign.io",
+        "links": [
+          "Services",
+          "Case Notes",
+          "Contact",
+          "Privacy"
+        ],
+        "meta": "Short brand line + copyright"
+      }
+    }
+  ],
+  "visualRequirements": {
+    "imageDirection": {
+      "sources": [
+        "Unsplash",
+        "Picsum"
+      ],
+      "heroSubjectHints": [
+        "Abstract but structured data-light compositions with depth",
+        "Modern product team collaboration in dark studio lighting",
+        "Close-up technology textures with cyan/emerald highlights"
+      ],
+      "featureSubjectHints": [
+        "Whiteboard strategy sessions with mixed-discipline teams",
+        "High-fidelity UI prototyping moments",
+        "Human-centered AI workflow artifacts"
+      ]
+    },
+    "motionNotes": [
+      "Slow parallax drift on the hero background visual (subtle, under 12px perceived movement).",
+      "Staggered fade-and-rise reveal for feature blocks on scroll.",
+      "Micro-interaction on primary CTA (soft glow pulse on hover/focus)."
+    ],
+    "compositionRules": [
+      "Prioritize large visual rhythm and whitespace over dense UI card grids.",
+      "Keep contrast AAA-ish for key text against dark surfaces where possible.",
+      "Use iconography as support, not as dominant storytelling over photography."
+    ]
+  }
+}
