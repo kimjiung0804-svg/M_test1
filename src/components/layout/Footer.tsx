@@ -17,7 +17,7 @@ export default function Footer() {
             Enable<span className="text-cyan-400"> Design</span>
           </a>
           <p className="mt-3 text-sm leading-relaxed text-slate-400">
-            AI product design partner for teams that ship with confidence.
+            The AI product design partner for teams that ship with confidence.
             enabledesign.io
           </p>
         </div>

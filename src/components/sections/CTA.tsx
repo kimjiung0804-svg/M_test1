@@ -15,8 +15,8 @@ export default function CTA() {
             Bring clarity to your next AI product move.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">
-            Share your context and get a focused recommendation from Enable
-            Design.
+            Share your context, and get a focused, senior recommendation from
+            the Enable Design team within one business day.
           </p>
           <div className="mt-8 flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
             <a

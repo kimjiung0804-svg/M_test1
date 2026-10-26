@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Quote } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -17,9 +18,20 @@ export default function Testimonials() {
               “Enable Design gave our AI feature roadmap structure and
               confidence in under three weeks.”
             </blockquote>
-            <p className="text-sm uppercase tracking-widest text-slate-400">
-              Product Lead, B2B SaaS
-            </p>
+            <div className="flex items-center gap-4">
+              <span className="relative h-12 w-12 overflow-hidden rounded-full border border-slate-700">
+                <Image
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&h=200&q=80"
+                  alt="Portrait of Sarah Kim, VP of Product"
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </span>
+              <p className="text-sm uppercase tracking-widest text-slate-400">
+                Sarah Kim · VP of Product, B2B SaaS
+              </p>
+            </div>
           </div>
         </Reveal>
 

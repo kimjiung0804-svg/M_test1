@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Full-bleed dominant visual with slow parallax drift (≤12px perceived) */}
       <div className="animate-hero-drift absolute inset-0" aria-hidden>
         <Image
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80"
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80"
           alt=""
           fill
           priority
@@ -26,11 +26,12 @@ export default function Hero() {
           Enable Design
         </p>
         <h1 className="font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-50 sm:text-5xl lg:text-6xl xl:text-7xl">
-          From idea to validated AI product design, faster and with confidence.
+          From idea to validated AI product design — faster, and with
+          confidence.
         </h1>
         <p className="max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-          Enable Design helps teams turn complex AI concepts into clear, trusted
-          product experiences that ship.
+          Enable Design turns complex AI concepts into clear, trusted product
+          experiences your users believe in — and your engineers can ship.
         </p>
         <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row">
           <a
